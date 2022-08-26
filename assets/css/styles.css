@@ -502,8 +502,27 @@ footer::after {
         display: none;
     }
 
+    #section-form .form-container form {
+        margin-left: 50rem;
+        margin-right: 50rem;
+        margin-top: 3rem;
+    }
+
     .form-container form label {
         text-align: center;
+    }
+
+    header::before {
+        width: max-content;
+    }
+
+    footer::before,
+    footer::after {
+        display: none;
+    }
+
+    footer {
+        width: 100%;
     }
 
     h2 {
