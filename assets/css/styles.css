@@ -512,10 +512,6 @@ footer::after {
         text-align: center;
     }
 
-    header::before {
-        width: max-content;
-    }
-
     footer::before,
     footer::after {
         display: none;
