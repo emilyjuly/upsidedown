@@ -242,6 +242,10 @@ section {
     color: rgb(129, 15, 15);
 }
 
+#section-stranger-things-trailer {
+    display: flex;
+}
+
 #section-stranger-things-trailer .section-texts {
     width: 50%;
     text-align: right;
@@ -378,16 +382,6 @@ section {
     color: var(--field-background-color);
 }
 
-#google_translate_element,
-.goog-te-banner-frame,
-.goog-te-balloon-frame,
-#goog-gt-tt,
-.goog-te-balloon-frame,
-.goog-tooltip,
-.goog-tooltip:hover {
-    display: none !important;
-}
-
 footer {
     padding: 60px 0;
     background-color: var(--footer-background-color);
@@ -424,4 +418,99 @@ footer::before {
 footer::after {
     right: -50px;
     transform: rotateZ(10deg);
+}
+
+@media (max-width: 1236px) {
+    .form-content {
+        flex-direction: column;
+    }
+
+    .form-container {
+        min-width: 50rem;
+    }
+}
+
+@media (max-width: 1122px) {
+    .video-frame iframe {
+        max-width: 30rem;
+    }
+
+    .section-texts {
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 945px) {
+    .gallery-container {
+        max-width: 50rem;
+    }
+}
+
+@media (max-width: 924px) {
+    .video-frame iframe {
+        max-width: 25rem;
+    }
+}
+
+@media (max-width: 500px) {
+    #section-inverted-world {
+        flex-direction: column;
+        width: 100%;
+        align-items: initial;
+    }
+
+    #section-inverted-world img {
+        max-width: 20rem;
+        margin: auto;
+    }
+
+    #section-stranger-things-trailer {
+        flex-direction: column;
+        width: 100%;
+        align-items: initial;
+    }
+
+    #section-stranger-things-trailer .section-texts {
+        align-items: initial;
+        text-align: left;
+    }
+
+    #section-stranger-things-gallery .container h2 {
+        max-width: fit-content;
+    }
+
+    #section-stranger-things-gallery .container .gallery-container {
+        flex-direction: column;
+    }
+
+    #section-form {
+        flex-direction: column;
+        width: 100%;
+        align-items: initial;
+    }
+
+    #section-form h2,
+    p {
+        text-align: left;
+    }
+
+    .form-content h3 {
+        font-size: 1rem;
+    }
+
+    #section-form .form-container::after {
+        display: none;
+    }
+
+    .form-container form label {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
 }
